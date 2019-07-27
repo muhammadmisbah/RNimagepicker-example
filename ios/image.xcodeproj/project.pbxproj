@@ -20,7 +20,6 @@
 		2DCD954D1E0B4F2C00145EB5 /* imageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* imageTests.m */; };
 		6065D06B3F17F80D94655860 /* libPods-image-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 300B28E4B73E88309D38BD6E /* libPods-image-tvOS.a */; };
 		C2AEC69125C6F28DFEE8D6F8 /* libPods-image.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4FD961E84D8F7521AF4F05 /* libPods-image.a */; };
-		CB29CF8A22ECBA1C0094FBDE /* libRNImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB29CF8922ECB9FF0094FBDE /* libRNImagePicker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +36,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "image-tvOS";
-		};
-		CB29CF8822ECB9FF0094FBDE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB29CF8422ECB9FF0094FBDE /* RNImagePicker.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 014A3B5C1C6CF33500B6D375;
-			remoteInfo = RNImagePicker;
 		};
 		CB29CF9F22ECBB0E0094FBDE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -191,7 +183,6 @@
 		98FC4A04FE2247F7A6FE10FB /* Pods-image.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-image.release.xcconfig"; path = "Target Support Files/Pods-image/Pods-image.release.xcconfig"; sourceTree = "<group>"; };
 		9EEC7CB6F9856AF64850FF7F /* Pods-imageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imageTests.debug.xcconfig"; path = "Target Support Files/Pods-imageTests/Pods-imageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE867D4992CCAEEC400918E /* Pods-image-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-image-tvOS.release.xcconfig"; path = "Target Support Files/Pods-image-tvOS/Pods-image-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		CB29CF8422ECB9FF0094FBDE /* RNImagePicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNImagePicker.xcodeproj; path = "../node_modules/react-native-image-picker/ios/RNImagePicker.xcodeproj"; sourceTree = "<group>"; };
 		CB29CF8C22ECBB0E0094FBDE /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		ECA99C92CE77C3CA2A48BD88 /* Pods-image-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-image-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-image-tvOSTests/Pods-image-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -211,7 +202,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB29CF8A22ECBA1C0094FBDE /* libRNImagePicker.a in Frameworks */,
 				C2AEC69125C6F28DFEE8D6F8 /* libPods-image.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +273,6 @@
 			isa = PBXGroup;
 			children = (
 				CB29CF8C22ECBB0E0094FBDE /* React.xcodeproj */,
-				CB29CF8422ECB9FF0094FBDE /* RNImagePicker.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -310,14 +299,6 @@
 				00E356EE1AD99517003FC87E /* imageTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* image-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* image-tvOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CB29CF8522ECB9FF0094FBDE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CB29CF8922ECB9FF0094FBDE /* libRNImagePicker.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -483,10 +464,6 @@
 					ProductGroup = CB29CF8D22ECBB0E0094FBDE /* Products */;
 					ProjectRef = CB29CF8C22ECBB0E0094FBDE /* React.xcodeproj */;
 				},
-				{
-					ProductGroup = CB29CF8522ECB9FF0094FBDE /* Products */;
-					ProjectRef = CB29CF8422ECB9FF0094FBDE /* RNImagePicker.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -499,13 +476,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CB29CF8922ECB9FF0094FBDE /* libRNImagePicker.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNImagePicker.a;
-			remoteRef = CB29CF8822ECB9FF0094FBDE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		CB29CFA022ECBB0E0094FBDE /* libReact.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
